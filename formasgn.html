@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<title>
+ Survey Form
+</title>
+<style>
+    body{
+        background-image: url('bg1.jpg');
+    }
+    .marq{
+        background-color: #000000;
+        color:yellow;
+        font-size: large;
+        font-family: 'Times New Roman', Times, serif;
+    }
+    .form{
+        margin: auto ;
+        width: 40%;
+        background-color: grey;
+        border-radius: 10px;
+        align-items: center;
+        margin-left:33%;
+        justify-content: center;
+        opacity: 0.9;
+    }
+    .title{
+        color: yellow;
+        display: inline;
+        font-size: 40px;
+        background-color: rgb(32, 27, 27);
+        font-family: cursive;
+        margin-left: 8%;
+    }
+    .button{
+        background-color: black;
+        padding: 8px 20px;
+        color: yellow;
+    }
+</style>
+
+<body>
+    <marquee class="marq"><i>College Student Survey Form to be filled by 2 Dec 2023</i></marquee><br><br>
+    <center><h2 class="title">Rknec.edu </h2></center>
+    <div class="form">
+    <center><h1>Student Survey Form</h1>
+    <form name="f1" method="post" action="submitasgn.php" onsubmit="return validateForm()">
+         Name : <input type="text"  name="name">
+        <span class="msg"></span>
+        <br><br>
+         Email :<input type="email" name="email">
+        <br><br>
+         Gender :
+        <input type="radio" name="gender"  value="Male">Male
+        <input type="radio" name="gender"  value="Female">Female
+        <input type="radio" name="gender"  value="Others">Others
+        
+
+        <br><br>
+         Phone Number : <input type="text" name="phone"><br><br>
+         Date of Birth : <input type="date" name="date"><br><br>
+         City :
+        <select name="city">
+            <option value="Nagpur">Nagpur</option>
+            <option value="Mumbai">Mumbai</option>
+            <option value="Pune">Pune</option>
+            <option value="Ahmednagar">Ahmednagar</option>
+            <option value="Amravati">Amravati</option>
+        </select>
+<br><br> 
+<button type="submit" class="button">Submit </button>
+<button type="reset" class="button">Reset</button>
+        
+</center>   </form>
+</div>
+
+<div class="form2">
+ 
+</div>
+</body>
+</html>
